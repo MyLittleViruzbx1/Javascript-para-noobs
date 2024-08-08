@@ -10,20 +10,19 @@
 
 <body>
     <header class="titulo"> Cartitas </header>
-
-
+    
     <div class="row mt-2">
         <div class="col text-center" id="divBtns">
             <button id="btnNew" class="btn btn-primary">Nuevo Juego</button>
-            <button id="btnPedir" class="btn btn-danger">Pedir carta</button>
-            <button id="btnPause" class="btn btn-primary">Detener</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-danger">Pedir carta</button>
+            <button id="btnPause" disabled="disabled" class="btn btn-primary">Detener</button>
         </div>
     </div>
 
     <div class="row container">
         <div class="col">
         <h1>Jugador 1 - <small>0</small> </h1>
-            <div id="jugador-cartas" class="divCartas pincheDiv">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="./assets/cartas/10S.png" alt=""> -->
             </div>
         </div>
@@ -39,6 +38,11 @@
     </div>
 
     <script src="./assets/js/underscore.js"></script>
-    <script src="./assets/js/juegos.js"></script>
+    <script src="./assets/js/juegos-min.js"></script>
+
+
+    <script>
+        console.log(moduloZ);
+    </script>
 </body>
 </html>

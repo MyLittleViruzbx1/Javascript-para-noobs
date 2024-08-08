@@ -82,13 +82,10 @@ const turnoComputadora = (puntosMinimos) =>{
             break;
         }
 
-
     } while( (puntosComputadora < puntosMinimos) && puntosMinimos <= 21 )
 
 
         setTimeout(() => {
-            
-            
             
             if(puntosComputadora === puntosMinimos){
                 alert('Empate perras')
@@ -140,7 +137,6 @@ btnPedir.addEventListener('click', () =>{
     imgCarta.alt = 'carta';
     imgCarta.classList = 'carta';
     
-    
     // <img class="carta" src="./assets/cartas/10S.png" alt="">
     cartasJugador.append(imgCarta);
     
@@ -165,3 +161,4 @@ btnPause.addEventListener('click', () =>{
 
     turnoComputadora(puntosJugador);
 });
+
