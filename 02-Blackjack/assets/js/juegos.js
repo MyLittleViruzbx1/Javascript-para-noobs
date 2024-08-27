@@ -15,7 +15,6 @@ const jugador1      = document.querySelectorAll('small');
 const cartasJugador = document.querySelector('#jugador-cartas');
 const cartasPC      = document.querySelector('#computadora-cartas');
 
-
 let deck = [];
 const tipos = ['C', 'D', 'H', 'S'];
 const especiales = ['A', 'J', 'Q', 'K'];
