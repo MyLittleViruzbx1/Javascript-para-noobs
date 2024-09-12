@@ -20,5 +20,6 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
+console.log('first')
 
 setupCounter(document.querySelector('#counter'))
