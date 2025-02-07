@@ -33,4 +33,3 @@ console.log(entriesPares);
 const propiedadesName = Object.getOwnPropertyNames(personaje);
 // lo mismo pero con .values
 console.log({propiedadesName})
-

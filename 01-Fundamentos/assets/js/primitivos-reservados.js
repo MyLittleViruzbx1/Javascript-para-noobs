@@ -1,21 +1,26 @@
-let nombre = 'myz';
 
-console.log(nombre);
 
-let numero = 21;
-console.log(numero);
-console.log(typeof numero);
+function saludar(nombre){
+    console.log(arguments); //
+    console.log('hola' +  ' ' + nombre);
 
-let heroe = true;
+    return 10;
+    console.log('Hello myz')
+}
 
-let arregloCosas = [
-    true, 
-    123,
-    'Fernando',
-    function(){},
-    ()=>{},
-    {a: 1},
-    ['X' , 'Megaman' , 'Zero' , 'Dr. Light']
-];
 
-console.log(arregloCosas[6][3]);
+const returnSaluda = () =>{
+    console.log('Hola a todos');
+}
+
+let personaje = {
+    nombre: "test"
+}
+
+saludar('myz');
+
+console.log(personaje)
+// const x=prompt("Hola que hace");
+delete personaje.nombre;
+console.log(personaje)
+
