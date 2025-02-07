@@ -1,13 +1,9 @@
-
-
 function saludar(nombre){
-    console.log(arguments); //
+    console.log(arguments); 
     console.log('hola' +  ' ' + nombre);
-
     return 10;
-    console.log('Hello myz')
+    console.log('Hello myz');
 }
-
 
 const returnSaluda = () =>{
     console.log('Hola a todos');
@@ -24,3 +20,6 @@ console.log(personaje)
 delete personaje.nombre;
 console.log(personaje)
 
+
+const aleatorio2 = () => Math.random();
+console.log(aleatorio2())

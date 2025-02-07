@@ -31,3 +31,6 @@ console.log(personaje)
 // console.log(personaje)
 // delete personaje.nombre
 // console.log(personaje)
+
+const aleatorio2 = () => Math.random();
+console.log(aleatorio2())
