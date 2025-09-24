@@ -1,21 +1,32 @@
-let a = 11;
+
+let a = 10;
 let b = a;
+a= 30;
 
-let ana = 11;
+console.log({a,b});
 
-if(ana >= 18){
-    console.log('es mayor de edad');
-}else{
-    console.log('es menor de edad');
+let juan = {nombre: 'juan'};
+let ana = {...juan};
+ana.nombre = 'ana';
+
+console.log({juan, ana});
+
+
+const cambiarNombre = ({...persona}) =>{
+    persona.nombre = 'tony';
+    return persona;
 }
 
 
-console.log('======================');
-(ana >= 18) ? console.log('ana es mayor') : console.log('ana es menor');
+let peter = {nombre: 'peter'}
+let tony = cambiarNombre(peter);
 
+console.log({peter, tony})
 
+const frutas = ['Manzana', 'Pera', 'Durazno'];
 
+const otrasFrutas = [...frutas];
 
+otrasFrutas.push('Mango');
 
-
-
+console.table({frutas, otrasFrutas});
