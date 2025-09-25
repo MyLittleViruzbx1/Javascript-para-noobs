@@ -1,0 +1,10 @@
+/* Ocultar scrollbar en navegadores comunes (opcional) */
+#mano-jugador::-webkit-scrollbar,
+#mano-banca::-webkit-scrollbar {
+  display: none;
+}
+#mano-jugador,
+#mano-banca {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

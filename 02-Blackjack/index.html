@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="h-full bg-green-900 text-white">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blackjack</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+
+  <body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-black text-white text-center p-4">
+      <h1 class="text-2xl sm:text-3xl font-bold">Blackjack</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="mx-auto max-w-6xl w-full p-4 sm:p-6">
+      <!-- Grupo de botones (responsive) -->
+
+      <!-- Zona de mesa (placeholder para tus cartas/tablero) -->
+      <section
+        class="mt-8 rounded-2xl bg-black/20 border border-white/10 p-8 sm:p-12 backdrop-blur-sm"
+      >
+        <h2 class="text-xl font-semibold mb-4 text-center sm:text-left">
+          Mesa de juego
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
+          <div class="rounded-xl border border-white/10 p-4 min-h-32">
+            <!-- Cartas del jugador -->
+            <p class="opacity-80">Jugador 1 <small>0</small></p>
+            <div
+              id="mano-jugador"
+              class="mt-2 flex flex-nowrap overflow-x-auto pr-4 gap-0 -space-x-8 sm:-space-x-10 md:-space-x-12"
+            >
+              <img
+                src="./assets/cartas/2D.png"
+                alt="carta"
+                class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
+              />
+              <img
+                src="./assets/cartas/2D.png"
+                alt="carta"
+                class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
+              />
+              <img
+                src="./assets/cartas/2D.png"
+                alt="carta"
+                class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
+              />
+              <img
+                src="./assets/cartas/2D.png"
+                alt="carta"
+                class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+          <div class="rounded-xl border border-white/10 p-4 min-h-32">
+            <!-- Cartas de la banca -->
+            <p class="opacity-80">Computadora</p>
+            <div
+              id="mano-banca"
+              class="mt-2 flex flex-nowrap overflow-x-auto pr-4 gap-0 -space-x-8 sm:-space-x-10 md:-space-x-12"
+            >
+              <img
+                src="./assets/cartas/2D.png"
+                alt="carta"
+                class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
+              />
+              <img
+                src="./assets/cartas/2D.png"
+                alt="carta"
+                class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
+              />
+              <img
+                src="./assets/cartas/2D.png"
+                alt="carta"
+                class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
+              />
+              <img
+                src="./assets/cartas/2D.png"
+                alt="carta"
+                class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex justify-center mt-6">
+        <div
+          class="w-full max-w-xl flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-4"
+        >
+          <button
+            class="bg-green-700 hover:bg-green-600 active:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-400/60 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition"
+          >
+            Nuevo juego
+          </button>
+
+          <button
+            class="bg-blue-700 hover:bg-blue-600 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400/60 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition"
+          >
+            Pedir Carta
+          </button>
+
+          <button
+            class="bg-red-700 hover:bg-red-600 active:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-400/60 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition"
+          >
+            Detener
+          </button>
+        </div>
+      </div>
+    </main>
+
     <script src="./assets/js/juego.js"></script>
   </body>
 </html>
