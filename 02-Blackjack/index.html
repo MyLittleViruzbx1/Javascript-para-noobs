@@ -28,12 +28,12 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
           <div class="rounded-xl border border-white/10 p-4 min-h-32">
             <!-- Cartas del jugador -->
-            <p class="opacity-80">Jugador 1 <small>0</small></p>
+            <p class="opacity-80">Jugador 1 - <small>0</small></p>
             <div
               id="mano-jugador"
-              class="mt-2 flex flex-nowrap overflow-x-auto pr-4 gap-0 -space-x-8 sm:-space-x-10 md:-space-x-12"
+              class="mt-2 h-[170px] sm:h-[200px] md:h-[230px] flex items-end flex-nowrap overflow-x-auto pr-4 gap-0 -space-x-14 sm:-space-x-16 md:-space-x-20"
             >
-              <img
+              <!-- <img
                 src="./assets/cartas/2D.png"
                 alt="carta"
                 class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
@@ -52,17 +52,17 @@
                 src="./assets/cartas/2D.png"
                 alt="carta"
                 class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
-              />
+              /> -->
             </div>
           </div>
           <div class="rounded-xl border border-white/10 p-4 min-h-32">
             <!-- Cartas de la banca -->
-            <p class="opacity-80">Computadora</p>
+            <p class="opacity-80">Computadora -<small>0</small></p>
             <div
               id="mano-banca"
               class="mt-2 flex flex-nowrap overflow-x-auto pr-4 gap-0 -space-x-8 sm:-space-x-10 md:-space-x-12"
             >
-              <img
+              <!-- <img
                 src="./assets/cartas/2D.png"
                 alt="carta"
                 class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
@@ -81,7 +81,7 @@
                 src="./assets/cartas/2D.png"
                 alt="carta"
                 class="w-[110px] sm:w-[130px] md:w-[150px] flex-shrink-0 rounded-lg shadow-md"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -92,26 +92,29 @@
           class="w-full max-w-xl flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-4"
         >
           <button
+            id="btnNuevo"
             class="bg-green-700 hover:bg-green-600 active:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-400/60 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition"
           >
             Nuevo juego
           </button>
 
           <button
-            class="bg-blue-700 hover:bg-blue-600 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400/60 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition"
+            id="btnPedir"
+            class="bg-blue-700 hover:bg-blue-600 active:bg-blue-800 disabled:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400/60 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition"
           >
             Pedir Carta
           </button>
 
           <button
-            class="bg-red-700 hover:bg-red-600 active:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-400/60 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition"
+            id="btnStop"
+            class="bg-red-700 hover:bg-red-600 active:bg-red-800 disabled:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-red-400/60 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition"
           >
             Detener
           </button>
         </div>
       </div>
     </main>
-
+    <script src="./assets/js/underscore.js"></script>
     <script src="./assets/js/juego.js"></script>
   </body>
 </html>
